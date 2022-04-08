@@ -1,0 +1,11 @@
+/* WAR: IE8 does not support a nesting-depth greater than 3...so this import must be duplicated */
+@import url('rockwell.font.css');
+
+@import url('theme.css');
+@import url('mainnav.css');
+
+/********************************************************************************/
+.content {
+	max-width: 600px;
+	margin: 25px 0px 40px 20px;
+}

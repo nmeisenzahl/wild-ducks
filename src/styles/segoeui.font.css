@@ -1,0 +1,137 @@
+/* Fonts for IE */
+@font-face {
+	font-family: SegoeUI;
+	src: url('/resources/segoeui.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: bold;
+	src: url('/resources/segoeuib.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	src: url('/resources/segoeuii.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: bold;
+	font-style: italic;
+	src: url('/resources/segoeuibi.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 300;
+	src: url('/resources/segoeuil.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 300;
+	font-style: italic;
+	src: url('/resources/segoeuili.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 200;
+	src: url('/resources/segoeuisl.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	font-weight: 200;
+	src: url('/resources/segoeuisli.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 600;
+	src: url('/resources/segoeuisb.eot');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	font-weight: 600;
+	src: url('/resources/segoeuisbi.eot');
+}
+
+@font-face {
+	font-family: SegoeUISymbol;
+	src: url('/resources/segoeuiz.eot');
+}
+
+/* Fonts for Firefox, Chrome, Safari */
+@font-face {
+	font-family: SegoeUI;
+	src: url('/resources/segoeui.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: bold;
+	src: url('/resources/segoeuib.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	src: url('/resources/segoeuii.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: bold;
+	font-style: italic;
+	src: url('/resources/segoeuibi.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 300;
+	src: url('/resources/segoeuil.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 300;
+	font-style: italic;
+	src: url('/resources/segoeuili.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 200;
+	src: url('/resources/segoeuisl.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	font-weight: 200;
+	src: url('/resources/segoeuisli.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-weight: 600;
+	src: url('/resources/segoeuisb.ttf');
+}
+
+@font-face {
+	font-family: SegoeUI;
+	font-style: italic;
+	font-weight: 600;
+	src: url('/resources/segoeuisbi.ttf');
+}
+
+@font-face {
+	font-family: SegoeUISymbol;
+	src: url('/resources/segoeuiz.ttf');
+}

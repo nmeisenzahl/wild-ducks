@@ -1,0 +1,449 @@
+@import url('rockwell.font.css');
+
+/**************************************************************************************************************/
+body {
+    background-color: white;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	min-width: 1040px;
+}
+
+/**************************************************************************************************************/
+#loadingpage {
+	display: table-cell;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/loading.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#mainnav_indicator {
+	z-index: 60;
+	position: absolute;
+	left: 30px;
+	bottom: -23px;
+}
+
+/**************************************************************************************************************/
+.white,
+.single,
+.double,
+.mainnav ul li a,
+.mainnav ul li a.selected {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.green {
+	color: rgb(0, 176, 80);
+}
+
+.red,
+.todo {
+	color: red;
+}
+
+.darkred {
+	color: rgb(192, 0, 0);
+}
+
+.grey {
+	color: #cecfcf;
+}
+
+.mediumGrey,
+ul.subnav li a,
+ul.sitemap li ul li a {
+	color: #6d6e75;
+}
+
+.darkGrey,
+ul.subnav li a.selected,
+ul.sitemap li ul li.fat,
+ul.sitemap li ul li a.fat {
+	color: #282525;
+}
+
+.bgkGrey,
+ul.subnav li a {
+	background-color: #e6e7e7;
+}
+
+.bgMediumGrey,
+.mainnav ul li a {
+	background-color: #e3e4e5;
+}
+
+.bgDarkGrey,
+ul.subnav li a.selected {
+	background-color: #929497;
+}
+
+.orange {
+	color: #dc9018;
+}
+
+.continousFont,
+.content,
+.continousH2,
+.content h2,
+ul.sitemap li ul li a,
+ul.sitemap li ul li.fat,
+ul.sitemap li ul li a.fat {
+	font-family: Arial;
+	font-size: 10Pt;
+}
+
+.continousH1,
+.content h1 {
+	font-family: Arial;
+	font-size: 16Pt;
+	line-height: 24px;
+}
+
+.continousH2,
+.content h2 {
+	font-weight: bold;
+}
+
+.mediumFont,
+ul.subnav li a {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.mediumStylishFont,
+ul.tiles li a {
+	font: 64px RockwellCondensed;
+}
+
+.smallStylishFont,
+.mainnav ul li a {
+	font: 18px RockwellCondensed;
+}
+
+/**************************************************************************************************************/
+.fastTransition,
+.tile,
+ul.tiles li a,
+.mainnav ul li a,
+ul.subnav li a {
+	transition: 0.1s ease;
+	
+	/* Safari and Chrome */
+	-webkit-transition: 0.1s ease;
+	
+	/* Opera */
+	-o-transition: 0.1s ease;
+}
+
+.transformSlowFadeFast,
+.content {
+	transition: transform 0.5s ease, opacity 0.2s ease;
+	
+	/* Safari and Chrome */
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.2s ease;
+	
+	/* Opera */
+	-o-transition: -o-transform 0.5s ease, opacity 0.2s ease;
+}
+
+.transformSlowFadeSlow,
+.mainnav,
+ul.subnav,
+ul.sitemap {
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	
+	/* Safari and Chrome */
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+	
+	/* Opera */
+	-o-transition: -o-transform 0.5s ease, opacity 0.5s ease;
+}
+
+.transformFastFadeSlow,
+ul.tiles li,
+ul.subnav li,
+.mainnav ul li {
+	transition: transform 0.2s ease, opacity 0.5s ease;
+	
+	/* Safari and Chrome */
+	-webkit-transition: -webkit-transform 0.2s ease, opacity 0.5s ease;
+	
+	/* Opera */
+	-o-transition: -o-transform 0.2s ease, opacity 0.5s ease;
+}
+
+.transformFromTopLeft,
+ul.tiles li,
+ul.subnav li,
+.mainnav ul li {
+	transform-origin: 0% 0%;
+	
+	/* Safari and Chrome */
+	-webkit-transform-origin: 0% 0%;
+	
+	/* Opera */
+	-o-transform-origin: 0% 0%;
+}
+
+.zero {
+	opacity: 0;
+	transform: scale(0.0,0.0);
+	
+	/* Safari and Chrome */
+	-webkit-transform: scale(0.0,0.0);
+	
+	/* Opera */
+	-o-transform: scale(0.0,0.0);
+}
+
+.rout {
+	opacity: 0;
+	transform: translateX(500px);
+	
+	/* Safari and Chrome */
+	-webkit-transform: translateX(500px);
+	
+	/* Opera */
+	-o-transform: translateX(500px);
+}
+
+.lout {
+	opacity: 0;
+	transform: translateX(-500px);
+	
+	/* Safari and Chrome */
+	-webkit-transform: translateX(-500px);
+	
+	/* Opera */
+	-o-transform: translateX(-500px);
+}
+
+.vout {
+	opacity: 0;
+	transform: translateY(500px);
+	
+	/* Safari and Chrome */
+	-webkit-transform: translateY(500px);
+	
+	/* Opera */
+	-o-transform: translateY(500px);
+}
+
+
+/**************************************************************************************************************/
+.todo {
+	font-weight: bold;
+}
+
+.content li,
+.content p {
+	text-align: left;
+}
+
+.content li {
+	margin-bottom: 5px;
+}
+
+.content ul {
+	list-style-image: url('../images/contentlist indicator.png');
+}
+
+.content {
+	display: inline-block;
+}
+
+.single {
+	max-width: 295px;
+	width: 295px;
+	height: 189px;
+}
+
+.double {
+	max-width: 600px;
+	width: 600px;
+	height: 189px;
+}
+
+.mainnav ul li a,
+.mainnav ul li a.selected {
+	max-width: 97px;
+	width: 97px;
+	height: 78px;
+}
+
+.smallTile,
+.mainnav ul.small li a {
+	width: 30px;
+	height: 37px;
+}
+
+ul.subnav li a {
+	max-width: 146px;
+	width: 146px;
+	height: 120px;
+}
+
+.flatlink,
+ul.sitemap li ul li a,
+ul.sitemap li ul li a.fat {
+	text-decoration: none;
+}
+
+.citation {
+	position: absolute;
+	font: bold 19px Arial;
+	text-align: left;
+	line-height: 21px;
+	left: 155px;
+	bottom: 5px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/**************************************************************************************************************/
+.mainnav {
+	z-index: 50;
+	position: relative;
+	border-bottom: 2px solid #d6d6d7;
+	vertical-align: top;
+	padding: 23px 0px 4px 164px;
+	background-color: white;
+}
+
+ul.sitemap {
+	vertical-align: top;
+	list-style: none;
+	position: relative;
+	margin: 0px;
+	padding: 20px 0px 20px 353px;
+	border-top: 1px solid #dbdcdd;
+}
+
+ul.tiles,
+ul.subnav,
+.mainnav ul {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	max-width: 920px;
+}
+
+ul.subnav {
+	width: 302px;
+	margin: 40px 0px 40px 47px;
+	position: relative;
+}
+
+ul.tiles li,
+ul.subnav li,
+.mainnav ul li {
+    display: inline-block;
+	margin: 0px 10px 10px 0px;
+	padding: 0px;
+	vertical-align: top;
+	position: relative;
+}
+
+.mainnav ul li {
+	margin: 0px 3px 0px 0px;
+	vertical-align: bottom;
+}
+
+ul.subnav li {
+	margin: 0px 5px 5px 0px;
+	vertical-align: middle;
+}
+
+ul.sitemap li {
+	display: inline-block;
+	margin: 0px 40px 0px 0px;
+	vertical-align: top;
+}
+
+ul.sitemap li ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+ul.sitemap li ul li {
+	display: list-item;
+	padding: 0px;
+	margin: 0px;
+}
+
+.thinOutline,
+.tile,
+ul.tiles li a,
+.mainnav ul li a,
+ul.subnav li a {
+	outline: rgba(0, 0, 0, 0.25) solid 1px;
+	outline-offset: -1px;
+}
+
+.tile,
+ul.tiles li a,
+.mainnav ul li a,
+ul.subnav li a {
+    display: table-cell;
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mainnav ul.small li a {
+	outline: none;
+	background-color: transparent;
+}
+
+.tileHoverEffect,
+ul.tiles li a:hover,
+.mainnav ul li a:hover,
+ul.subnav li a:hover {
+	outline: rgba(0, 0, 0, 0.5) solid 4px;
+}
+
+.mainnav ul.small li a:hover {
+	outline: none;
+}
+
+.tileClickEffect,
+ul.tiles li a:active,
+.mainnav ul li a:active,
+ul.subnav li a:active {
+	outline: rgba(0, 0, 0, 0.5) solid 4px;
+	transform: scale(0.97,0.97);
+	
+	/* Safari and Chrome */
+	-webkit-transform: scale(0.97,0.97);
+	
+	/* Opera */
+	-o-transform: scale(0.97,0.97);
+}
+
+ul.tiles li a img,
+.mainnav ul li a img,
+ul.subnav li a img {
+	border: none;	/* IE */
+}

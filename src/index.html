@@ -4,14 +4,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <title>Wild Ducks</title>
+	<link rel="stylesheet" href="styles/page.css" type="text/css"/>
+	<link rel="icon" href="images/logo-fred%20mini.png" type="image/png"/>
+	<link rel="shortcut icon" href="images/logo-fred%20mini.png" type="image/png"/>
+    <script src="jquery/jquery-1.8.2.min.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script type="text/javascript" src="Box2dWeb-2.1.a.3.min.js"></script>
+    <script type="text/javascript" src="boxbox.min.js"></script>
+    <script type="text/javascript" src="drag2.js"></script>
+    <script type="text/javascript" src="world.js"></script>
+    
+    <style type="text/css">
+    .canvas {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:1024px;
+        height:600px;
+    }
+    .drag {
+        position: absolute;
+    }
+    .score {
+        position: absolute;
+        top: 35px;
+        right: 80px;
+        font: bold 24px Rockwell;
+        color: rgb(61, 33, 0);
+    }
+    .fredcount {
+        position: absolute;
+        top: 540px;
+        left: 80px;
+        width:75px;
+        height: 40px;
+        font: bold 18px Rockwell;
+        color: rgb(255, 149, 10);
+    }
+    </style>
+  </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+  <body>
 
+	<div class="mainnav">
+		<ul>
+			<li>
+				<img id="mainnav_claim" alt="whiteduck Gesellschaft f&uuml;r Softwareentwicklung mbH" src="AngryDucksLogo.png"/>
+			</li><!--
+			--><li>
+				<a id="tleKompetenzen" class="selected" href="https://whiteduck.de/kompetenzen/" target="_blank">kompetenzen</a>
+			</li><!--
+			--><li>
+				<a id="tleTechnologie" href="https://whiteduck.de/services/" target="_blank">services</a>
+			</li><!--
+			--><li>
+				<a id="tleUndMehr" href="https://whiteduck.de/" target="_blank">und mehr</a>
+			</li>
+		</ul>
+		<ul id="mainnav_std" class="small">
+			<li>
+				<a id="mainnav_tleHome" href="index.html">
+				</a>
+			</li><!--
+			--><li>
+				<a id="mainnav_tleMail" href="https://whiteduck.de/kontakt/" target="_blank">
+				</a>
+			</li><!--
+			--><li>
+				<a id="mainnav_tleFacebook" href="http://facebook.de/whiteduckgmbh" target="_blank">
+				</a>
+			</li><!--
+			--><li id="mainnav_tleFred">
+				<img id="mainnav_Fred" alt="Fred" src="images/logo-fred%20small.png"/>
+				<img class="fredEyeSmall" alt="Fred's blinking eye ;)" src="images/fredeyesmall0.png"/>
+			</li>
+		</ul>
+	</div>
+
+  <pre id="debug" style="display:none"> </pre>
+
+  <div class="content" style="position:absolute; max-width:1100px;">
+        <div>
+            <img src="AngryDucks.png" width="1024" height="597" alt="Background"/>
+        </div>
+
+        <div class="canvas">
+            <canvas id="game" width="1024" height="600">Sorry, but you need a HTML5 capable browser. :-(
+        </canvas>
+        </div>
+
+        <img class="drag" src="AngryFred.png" width="60" height="60" style="position:absolute; top: 430px; left: 75px; width: 60px; height: 60px;"/>
+
+        <img src="reload.png"
+            width="60" height="60"
+            style="position: absolute; top: 35px; left: 35px; width: 60px; height: 60px;"
+            onclick="window.location.reload()"/>
+        <div id="score" class="score">0 Points</div>
+        <div class="fredcount">
+            <img src="AngryFred.png" width="35" height="35" style="position:relative; top:5px; left:5px; float:left; opacity:1.0;"/>
+            <div id="fredcount" style="position:relative; top:11px; left:12px; opacity:1.0;">?</div>
+        </div>
+    </div>
+
+    <div class="content" style="height:600px"></div>
+
+    <ul class="sitemap">
+        <li>
+            <ul>
+                <li>
+                    <a class="fat" href="https://whiteduck.de/kompetenzen/" target="_blank">kompetenzen</a>
+                </li>
+                <!--
+					-->
+                <li>
+                    <a href="https://whiteduck.de/kompetenzen/#appdev" target="_blank">application development</a>
+                </li>
+                <!--
+					-->
+                <li>
+                    <a href="https://whiteduck.de/kompetenzen/#cloud_inf" target="_blank">cloud infrastructure</a>
+                </li>
+                <!--
+					-->
+          <li>
+            <a href="https://whiteduck.de/kompetenzen/#devops" target="_blank">DevOps</a>
+        </li>
+        <!--
+					-->
+                <li>
+                    <a href="https://whiteduck.de/kompetenzen/#iot" target="_blank">IoT</a>
+                </li>
+            </ul>
+        </li>
+        <!--
+        			-->
+        <li>
+          <ul>
+            <li>
+              <a class="fat" href="https://whiteduck.de/services/" target="_blank">services</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/azure-solution-assessment" target="_blank">Azure Solution Assessment</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/azure-workshops" target="_blank">Azure Workshops</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/cloud-native-journey" target="_blank">Cloud Native Journey</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/devops-road-trip" target="_blank">DevOps Road Trip</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/kubernetes-sailing-trip" target="_blank">Kubernetes Sailing Trip</a>
+            </li>
+            <!--
+                  					-->
+            <li>
+              <a href="https://whiteduck.de/services/microsoft-azure-kaufen" target="_blank">Microsoft Azure kaufen</a>
+            </li>
+          </ul>
+          </li>
+        <!--
+			-->
+        <li>
+            <ul>
+                <li>
+                    <a class="fat" href="https://whiteduck.de/" target="_blank">und mehr</a>
+                </li>
+            </ul>
+        </li>
+        <!--
+			-->
+        <li>
+            <ul>
+                <li>
+                    <a class="fat" href="index.html">home</a>
+                </li>
+                <!--
+					-->
+                <li>
+                    <a class="fat" href="https://whiteduck.de/kontakt/" target="_blank">kontakt</a>
+                </li>
+                <!--
+					-->
+                <li>
+                    <a class="fat" href="http://facebook.de/whiteduckgmbh" target="_blank">facebook</a>
+                </li>
+                <!--
+					-->
+                <li>
+                    <a class="fat" href="https://whiteduck.de/impressum/" target="_blank">impressum</a>
+                </li>
+            </ul>
+        </li>
+        <!--
+			-->
+        <li>
+            <ul>
+                <li class="fat">&copy; white duck 2013
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+  <script type="text/javascript" src="game.js"></script>
+  
+  </body>
 </html>

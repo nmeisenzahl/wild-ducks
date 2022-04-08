@@ -1,0 +1,102 @@
+/* Fonts for IE */
+@font-face {
+	font-family: Rockwell;
+	src: url('../resources/ROCK.eot');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: bold;
+	src: url('../resources/ROCKB.eot');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: bold;
+	font-style: italic;
+	src: url('../resources/ROCKBI.eot');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-style: italic;
+	src: url('../resources/ROCKI.eot');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: 800;
+	src: url('../resources/ROCKEB.eot');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-stretch: condensed;
+	src: url('../resources/ROCC____.eot');
+}
+
+@font-face {
+	font-family: RockwellCondensed;
+	src: url('../resources/ROCC____.eot');
+}
+
+@font-face {
+	font-family: RockwellCondensed;
+	font-weight: bold;
+	src: url('../resources/ROCCB___.eot');
+}
+
+/* Fonts for Firefox, Chrome, Safari */
+@font-face {
+	font-family: Rockwell;
+	src: url('../resources/ROCK.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: bold;
+	src: url('../resources/ROCKB.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: bold;
+	font-style: italic;
+	src: url('../resources/ROCKBI.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-style: italic;
+	src: url('../resources/ROCKI.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: 800;
+	src: url('../resources/ROCKEB.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-stretch: condensed;
+	src: url('../resources/ROCC____.TTF');
+}
+
+@font-face {
+	font-family: Rockwell;
+	font-weight: bold;
+	font-stretch: condensed;
+	src: url('../resources/ROCCB___.TTF');
+}
+
+@font-face {
+	font-family: RockwellCondensed;
+	src: url('../resources/ROCC____.TTF');
+}
+
+@font-face {
+	font-family: RockwellCondensed;
+	font-weight: bold;
+	src: url('../resources/ROCCB___.TTF');
+}

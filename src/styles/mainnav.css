@@ -1,0 +1,46 @@
+#mainnav_std {
+	position: absolute;
+	top: 39px;
+	left: 850px;
+}
+
+#mainnav_claim {
+	position: relative;
+	bottom:  -4px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+#mainnav_tleHome {
+	background-image: url('../images/home.png');
+	outline: none;
+}
+
+#mainnav_tleMail {
+	background-image: url('../images/mail.png');
+	outline: none;
+}
+
+#mainnav_tleFacebook {
+	background-image: url('../images/facebook.png');
+	outline: none;
+}
+
+#mainnav_tleFred {
+	width: 1px;
+	height: 78px;
+	padding: 0px 0px 0px 24px;
+}
+
+#mainnav_Fred {
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+}
+
+.fredEyeSmall {
+	position: absolute;
+	top: 55px;
+	left:  63px;
+	cursor: pointer;
+}
