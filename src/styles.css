@@ -19,3 +19,8 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
+.mainnav {
+	z-index: 50;
+	padding: 125px 0px 4px 164px;
+}

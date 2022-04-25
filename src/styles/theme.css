@@ -317,8 +317,7 @@ ul.sitemap li ul li a.fat {
 /**************************************************************************************************************/
 .mainnav {
 	z-index: 50;
-	position: relative;
-	border-bottom: 2px solid #d6d6d7;
+	padding: 125px 0px 4px 164px !important;
 	vertical-align: top;
 	padding: 23px 0px 4px 164px;
 	background-color: white;

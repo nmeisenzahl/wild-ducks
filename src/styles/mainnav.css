@@ -29,7 +29,7 @@
 #mainnav_tleFred {
 	width: 1px;
 	height: 78px;
-	padding: 0px 0px 0px 24px;
+	padding: 0px 0px 0px 125px;
 }
 
 #mainnav_Fred {
@@ -43,4 +43,5 @@
 	top: 55px;
 	left:  63px;
 	cursor: pointer;
+	padding: 3px 0px 4px 85px;
 }
